@@ -34,12 +34,13 @@ Define the following options when creating your map:
 Create a map that sets the `zoom` and `center` of the map and adds a `styleid`
 option to the map:
 
+```html
     <div id="map"
         data-l-zoom="8"
         data-l-center="[40.71, -73.98]"
         data-l-styleid="24559"
     ></div>
-
+```
 
 
 ## Demos
