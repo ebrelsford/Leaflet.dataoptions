@@ -7,7 +7,7 @@
 
 (function () {
     
-    function defineDataoptions(L) {
+    function defineDataOptions(L) {
 
         L.Map = L.Map.extend({
 
@@ -16,8 +16,8 @@
             initialize: function (id, options) {
                 // Get the data prefix for attribute names
                 var prefix = 'data-l-';
-                if (options !== undefined && options.dataConfigPrefix !== undefined) {
-                    prefix = options.dataConfigPrefix;
+                if (options !== undefined && options.dataOptionsPrefix !== undefined) {
+                    prefix = options.dataOptionsPrefix;
                 }
 
                 // Find options given by data attribute, add to existing options
@@ -61,12 +61,12 @@
     if (typeof define === 'function' && define.amd) {
         // Try to add dataoptions to Leaflet using AMD
         define(['leaflet'], function (L) {
-            defineDataoptions(L);
+            defineDataOptions(L);
         });
     }
     else {
         // Else use the global L
-        defineDataoptions(L);
+        defineDataOptions(L);
     }
 
 })();

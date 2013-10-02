@@ -25,7 +25,7 @@ AMD compatible.
 
 Define the following options when creating your map:
 
- - **dataConfigPrefix**: (string) The prefix each data attribute you want 
+ - **dataOptionsPrefix**: (string) The prefix each data attribute you want 
    leaflet.dataoptions to recognize. Optional, defaults to 'data-l-'.
 
 
