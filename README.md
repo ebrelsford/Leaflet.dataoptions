@@ -26,10 +26,10 @@ AMD compatible.
 Define the following options when creating your map:
 
  - **dataOptionsPrefix**: (string) The prefix each data attribute you want 
-   leaflet.dataoptions to recognize. Optional, defaults to 'data-l-'.
+   Leaflet.dataoptions to recognize. Optional, defaults to `data-l-`.
 
 
-## Examples
+### Examples
 
 Create a map that sets the `zoom` and `center` of the map and adds a `styleid`
 option to the map:
