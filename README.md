@@ -2,7 +2,7 @@ Leaflet.dataoptions
 ===================
 
 Leaflet.dataoptions is a [Leaflet][] plugin that extends `L.Map` to read and add
-configuration settings using `data-\*` attributes set on the map's element. If
+configuration settings using `data-*` attributes set on the map's element. If
 you specify options that are valid map options (eg, `zoom`), then those will 
 override existing map options. If you specify options that are not valid map 
 options, they will be added to the map options.
@@ -13,10 +13,12 @@ original value is passed to the map intact.
 
 ## Usage
 
-Leaflet.dataoptions is only tested on Leaflet version 0.6 or greater.
-
 Include `leaflet.dataoptions.js` in your page, set the options on your map as
 specified below, and create a map with a `div` as in the examples.
+
+Leaflet.dataoptions is only tested on Leaflet version 0.6 or greater.
+
+AMD compatible.
 
 
 ### Options
