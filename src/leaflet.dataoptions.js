@@ -37,11 +37,22 @@
                     var attribute = attributes[i];
                     if (attribute.name.search(prefix) === 0) {
                         var name = attribute.name.slice(prefix.length),
+                            camelCaseName = this.camelCaseDataAttributeName(name),
                             value = this.parseDataAttributeValue(attribute.value);
-                        newOptions[name] = value;
+                        newOptions[camelCaseName] = newOptions[name] = value;
                     }
                 }
                 return newOptions;
+            },
+
+            camelCaseDataAttributeName: function (name) {
+                var nameParts = name.split('-'),
+                    camelCaseName = nameParts[0];
+                for (var i = 1; i < nameParts.length; i++) {
+                    camelCaseName += nameParts[i][0].toUpperCase();
+                    camelCaseName += nameParts[i].slice(1);
+                }
+                return camelCaseName;
             },
 
             parseDataAttributeValue: function (value) {
