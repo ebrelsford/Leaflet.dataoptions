@@ -1,0 +1,26 @@
+{
+  "name": "leaflet-dataoptions",
+  "version": "1.0.0",
+  "description": "Set Leaflet options using data attributes",
+  "main": "src/leaflet.dataoptions.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ebrelsford/Leaflet.dataoptions.git"
+  },
+  "keywords": [
+    "leaflet",
+    "gis",
+    "map",
+    "maps",
+    "geoweb"
+  ],
+  "author": "Eric Brelsford",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ebrelsford/Leaflet.dataoptions/issues"
+  },
+  "homepage": "https://github.com/ebrelsford/Leaflet.dataoptions"
+}
