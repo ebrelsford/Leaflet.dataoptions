@@ -1,6 +1,6 @@
 {
   "name": "leaflet-dataoptions",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Set Leaflet options using data attributes",
   "main": "src/leaflet.dataoptions.js",
   "scripts": {
