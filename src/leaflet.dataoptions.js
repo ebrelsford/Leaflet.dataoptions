@@ -9,6 +9,8 @@
     
     function defineDataOptions(L) {
 
+        var LMapOrig = L.Map;
+
         L.Map = L.Map.extend({
 
             // Override the default constructor to get options from data 
@@ -25,7 +27,7 @@
                 options = L.extend(dataAttributeOptions, options);
 
                 // Carry on as usual
-                L.Map.__super__.initialize.call(this, id, options);
+                LMapOrig.prototype.initialize.call(this, id, options);
             },
 
             loadDataAttributeOptions: function (id, prefix) {
